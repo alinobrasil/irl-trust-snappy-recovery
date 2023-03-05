@@ -109,6 +109,7 @@ export const Recovery = () => {
   };
 
   const renderContent = () => {
+    console.log('recoveredAddresses', recoveredAddresses);
     if (recoveredAddresses) {
       return (
         <>
