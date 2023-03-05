@@ -24,6 +24,9 @@ export function isSetupRecoveryParams(params: unknown): asserts params is SetupR
 }
 
 export const setupRecovery = async ({ friendsKeys }: SetupRecoveryParams): Promise<SetupRecoveryResult> => {
+  console.log('friendsKeys: ', friendsKeys);
+  console.log('RECOVERY_TOTAL_PARTS: ', RECOVERY_TOTAL_PARTS);
+
   if (friendsKeys.length !== RECOVERY_TOTAL_PARTS) {
     throw new Error(`Must provide ${RECOVERY_TOTAL_PARTS} public keys to setup recovery`);
   }

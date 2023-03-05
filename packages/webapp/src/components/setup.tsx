@@ -14,7 +14,7 @@ import { CssOutlined } from '@mui/icons-material';
 export const Setup = () => {
   const [publicKeys, setPublicKeys] = useState<string[]>([]);
   const publicKeyInput = useRef<HTMLInputElement | null>(null);
-  const hasEnoughPublicKeys = publicKeys.length === 5;
+  const hasEnoughPublicKeys = publicKeys.length === 2;
 
   const [isSettingUp, setIsSettingUp] = useState(false);
 
