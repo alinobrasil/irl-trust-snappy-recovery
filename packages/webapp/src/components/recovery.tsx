@@ -153,7 +153,8 @@ export const Recovery = () => {
           <h3>Here's your recovery URL:</h3>
           <p><code>{recoveryUrl}</code></p>
           <p>
-            Send this URL to the people with whom you setup your recovery. As they respond to your request, the counter below will update in real-time.
+            Send this URL to the 2 designated lenders.
+            Keep this window open so you can see when they approve.
           </p>
           <p>
             <strong>{numRecoveryShards}/{RECOVERY_TOTAL_PARTS}</strong> friends have responded to your request (minimum {RECOVERY_THRESHOLD_PARTS})

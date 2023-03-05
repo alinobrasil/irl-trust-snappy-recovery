@@ -38,19 +38,26 @@ export const Layout = () => {
       }}
     >
       <AppBar position="static" enableColorOnDark color="default">
+
         <Toolbar>
+
           <Link className="clean" to="/">
-            <Typography
-              variant="h5"
-              component="h1"
-              sx={{
-                marginRight: 2,
-                fontWeight: 'bold',
-              }}
-            >
-              💥 Snappy Recovery
-            </Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', padding: '10' }}>
+              <img src="/irl-trust-logo.jpg" alt="logo" width="40" height="40" />
+              <Typography
+                variant="h5"
+                component="h1"
+                sx={{
+                  marginRight: 2,
+                  fontWeight: 'bold',
+                }}
+                style={{ color: '#00ff00' }}
+              >
+                IRL-Trust Social Recovery
+              </Typography>
+            </div>
           </Link>
+
           {state.installedSnap && (
             <Button sx={{ marginRight: 2 }} onClick={doConnect}>Re-install</Button>
           )}

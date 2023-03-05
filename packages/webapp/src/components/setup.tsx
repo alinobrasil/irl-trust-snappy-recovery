@@ -79,13 +79,12 @@ export const Setup = () => {
 
   return (
     <Box sx={{ p: 2 }}>
-      <h2>Setup</h2>
+      <h2>Setup Social Recovery</h2>
       <p>
-        First, make sure to save your Snappy Recovery Public Key somewhere. As the name says, this key is public so you can save it anywhere (email, cloud storage, ...)
+        Ask 2 lenders from your lending pool to help you recover your keys.
+        Enter them below, one at a time:
       </p>
-      <p>
-        Ask five of your friends to install Snappy Recovery and give you their Snappy Recovery Public Key. Enter the keys below:
-      </p>
+
       {
         publicKeys.length > 0 && (
           <Paper sx={{ maxWidth: 700, fontSize: 12, mb: 2 }}>

@@ -33,7 +33,7 @@ export const App = () => {
         <Route index element={<Home />} />
         <Route element={<LoggedIn />}>
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="how-it-works" element={<HowItWorks />} />
+          {/* <Route path="how-it-works" element={<HowItWorks />} /> */}
           <Route path="setup" element={<Setup />} />
           <Route path="recovery" element={<Recovery />} />
           <Route path="assist" element={<Assist />} />

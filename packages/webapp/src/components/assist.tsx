@@ -35,10 +35,10 @@ export const Assist = () => {
     if (friendPublicKey && recoveryPublicKey) {
       return (
         <>
-          <p>A friend with public key <code>{friendPublicKey}</code> has requested your assistance to recover their private key.</p>
-          <p>Make sure the request came from the actual person before accepting!</p>
+          <p>Your friend with public key <code>{friendPublicKey}</code> has requested your assistance to recover their private key.</p>
+          <p>Please make sure you check with them before approving.</p>
           <p>
-            <Button onClick={acceptRecovery}>OK, help the poor bastard</Button>
+            <Button onClick={acceptRecovery}>Approve Key Recovery</Button>
           </p>
         </>
       );

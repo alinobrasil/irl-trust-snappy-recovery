@@ -22,9 +22,11 @@ export const Profile = () => {
     <Box sx={{ p: 2 }}>
       <h2>Profile</h2>
       <h3>Your public key</h3>
+      <p>Here's your public key. Make sure you save it somewhere you can access later.</p>
       <p>
         <code>{publicKey}</code>
       </p>
+      <br />
       {
         isRecoverySetup && (
           <section>

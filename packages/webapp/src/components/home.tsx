@@ -44,7 +44,8 @@ export const Home = () => {
         justifyContent: 'center',
       }}
       >
-        <Button onClick={doConnect}>Connect Metamask</Button>
+        <p>You need Metamask Flask to enable Social Recovery</p>
+        <Button onClick={doConnect}>Connect Metamask Flask</Button>
       </Box>
     );
   }
